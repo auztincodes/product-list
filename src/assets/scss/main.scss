@@ -1,0 +1,33 @@
+@import 'base/reset';
+@import 'base/mixins';
+@import 'base/base';
+
+html {
+	overflow-x: hidden;
+	font-variant-numeric: tabular-nums;
+}
+
+body {
+	background-color: #ECECEC;
+	color: #252526;
+}
+.container {
+	max-width: 769px;
+	margin: 0 auto;
+	padding: 0 1rem;
+	width: 100%;
+	position: relative;
+    @media only screen and (max-width: 769px) {
+        padding: 0 2rem;
+      }
+}
+.chevron {
+    width: 11px;
+    height: 11px;
+  }
+  .chevron-left{
+    transform: rotate(90deg);
+  }
+  .chevron-right{
+  transform: rotate(270deg);
+  }

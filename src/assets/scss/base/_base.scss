@@ -1,0 +1,22 @@
+html {
+	--fluid-type-min: 12px;
+	--fluid-type-target: 0.25vw;
+	--fluid-type-max: 20px;
+	font-size: clamp(
+		var(--fluid-type-min),
+		0.8rem + var(--fluid-type-target),
+		var(--fluid-type-max)
+	);
+	font-family: 'Inter', sans-serif;
+	line-height: 1.5;
+	scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 500;
+}
